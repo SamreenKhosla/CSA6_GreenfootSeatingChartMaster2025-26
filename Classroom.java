@@ -137,12 +137,6 @@ public class Classroom extends World
         studentdesk20.setDeskGroup(8);
     }
    
-    
-    /**
-     * Prepare the world for the start of the program.
-     * That is: create the initial objects and add them to the world.
-     */
-    
     private void prepare()
     {
         createDeskLayout();
@@ -195,7 +189,7 @@ public class Classroom extends World
         addObject(engelbertsonSpencer,2,7);
         engelbertsonSpencer.assignSeat(); //this method does nothing other than setting variables to the exact same value
  
- 
+
         KrishivJaini krishivjaini = new KrishivJaini();
         addObject(krishivjaini,8,10);
         krishivjaini.assignSeat();
@@ -205,10 +199,20 @@ public class Classroom extends World
         addObject(krishnansanjay,8,3);
         krishnansanjay.assignSeat();
 
+  
+        AmatoNakayama amatoNakayama = new AmatoNakayama();
+        addObject(amatoNakayama,amatoNakayama.mySeatX,amatoNakayama.mySeatY);
+        amatoNakayama.assignSeat();
+        
 
         ShastriAryav shastriaryav = new ShastriAryav();
         addObject(shastriaryav,9,9);
         shastriaryav.assignSeat();
+
+
+        addObject(vinothyashwant,5,6);
+        vinothyashwant.assignSeat();
+
         
         SanjanaSalkar sanjanasalkar = new SanjanaSalkar();
         addObject(sanjanasalkar,8,7);
@@ -217,6 +221,8 @@ public class Classroom extends World
         //VinothYashwant vinothyashwant = new VinothYashwant();
         //addObject(vinothyashwant,5,6);
         //vinothyashwant.assignSeat();
+
+
 
         ShirolRishi shirolrishi = new ShirolRishi();
         addObject(shirolrishi,9,4);
@@ -247,10 +253,18 @@ public class Classroom extends World
         RuBhavanasi rubhavanasi = new RuBhavanasi();
         addObject(rubhavanasi,6,7);
         rubhavanasi.assignSeat();
-     
+
+        IshitaPrasad prasadishita = new IshitaPrasad();
+        addObject(prasadishita,5,10);
+        prasadishita.assignSeat();
+        
         AshaShanbhogue ashashanbhogue = new AshaShanbhogue();
         addObject(ashashanbhogue,6,3);
         ashashanbhogue.assignSeat();
+
+        GraceMa gracema = new GraceMa();
+        addObject(gracema,9,3);
+        gracema.assignSeat();
 
         LucasCaswell lucascaswell = new LucasCaswell();
         addObject(lucascaswell,2,3);
@@ -260,12 +274,10 @@ public class Classroom extends World
         addObject(totrearjun,5,3);
         totrearjun.assignSeat();
 
-     
-
-
         BishalDas bishaldas = new BishalDas();
         addObject(bishaldas,6,4);
         bishaldas.assignSeat();
+
 
     }
     
@@ -305,7 +317,6 @@ public class Classroom extends World
     }
     
  
-    
     // modified from https://beginnersbook.com/2014/01/how-to-append-to-a-file-in-java/
     
 
@@ -338,5 +349,5 @@ public class Classroom extends World
          ioe.printStackTrace();
        }
    }
-}
+ }
 }
